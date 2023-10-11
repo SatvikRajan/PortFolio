@@ -30,7 +30,7 @@ export default function Projects() {
             isBlog={false}
             title="MyPortfolio"
             description="My portfolio website showcases my diverse skills, projects, and achievements. It provides a glimpse into my professional journey and expertise, serving as a compelling digital resume for potential opportunities."
-            ghLink=""
+            ghLink="https://github.com/SatvikRajan/PortFolio"
             demoLink="*/"
           />
         </Col>
