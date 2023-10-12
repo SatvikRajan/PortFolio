@@ -6,7 +6,7 @@ import Navbar from './components/Navbar'
 import Projects from './components/Projects/Projects'
 import About from './components/About/About'
 import Resume from './components/Resume/ResumeNew'
-// import Preloader from './components/Preloader';
+import Preloader from './components/Preloader';
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop';
 import {
@@ -27,7 +27,7 @@ function App() {
   
   return (
     <Router>
-      {/* <Preloader load={load}> */}
+      <Preloader load={load}>
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />
