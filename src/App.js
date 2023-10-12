@@ -16,10 +16,10 @@ import {
   Navigate
 } from "react-router-dom";
 function App() {
-  const [ load, setLoad] = useState(true)
+  const [ load, updateLoad] = useState(true)
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLoad(false);
+      updateLoad(false);
     }, 1200);
   
     return () =>  clearTimeout(timer);
@@ -27,7 +27,7 @@ function App() {
   
   return (
     <Router>
-      <Preloader load={load}>
+      <Preloader load={load}/>
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />
@@ -40,7 +40,6 @@ function App() {
         </Routes>
         <Footer />
       </div>
-      {/* </Preloader> */}
     </Router>
   );
 }
